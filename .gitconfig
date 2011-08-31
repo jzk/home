@@ -1,0 +1,10 @@
+[color]
+	ui = auto
+	
+[user]
+	name = Zhenkai Jiang
+	email = zk.jiang@gmail.com
+
+[alias]
+
+	today = !git log --since=\"12 hours ago\" --author=\"`git config --get user.name`\" --reverse --pretty=format:%s
