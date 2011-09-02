@@ -8,3 +8,5 @@
 [alias]
 
 	today = !git log --since=\"12 hours ago\" --author=\"`git config --get user.name`\" --reverse --pretty=format:%s
+[branch]
+	autosetupmerge = true
