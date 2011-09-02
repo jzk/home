@@ -34,3 +34,5 @@ set keymap vi
 alias ll='ls -la'
 alias mytree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 alias synchome="~/hp_utility/invokeSyncAllFrom77.sh"
+alias sophome="cd $SOP_HOME"
+alais automationhome="cd $SOP_AUTOMATION_HOME"
