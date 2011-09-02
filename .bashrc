@@ -33,4 +33,4 @@ set keymap vi
 
 alias ll='ls -la'
 alias mytree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
-
+alias synchome="~/hp_utility/invokeSyncAllFrom77.sh"
