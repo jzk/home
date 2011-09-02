@@ -25,8 +25,12 @@ PATH=$PATH:$SOP_HOME/bplaneProvision/bin
 export JAVA_HOME JBOSS_HOME ANT_HOME HORNETQ_HOME SOP_HOME HTTP_PROXY MOD_CLUSTER_HOME HOSTNAME
 
 
+set o vi
 set editing-mode vi
 set keymap vi
+
 # User specific aliases and functions
 
+alias ll='ls -la'
+alias mytree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 
