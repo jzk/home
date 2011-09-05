@@ -1,12 +1,39 @@
-[color]
-	ui = auto
-	
 [user]
 	name = Zhenkai Jiang
 	email = zk.jiang@gmail.com
+[color]
+	ui = auto
 
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	new = green bold
+	whitespace = red reverse
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan	
+ 
 [alias]
-
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	dc = diff --cached
+	lg = log -p
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	ls = ls-files
 	today = !git log --since=\"12 hours ago\" --author=\"`git config --get user.name`\" --reverse --pretty=format:%s
+
+        # Show files ignored by git:
+        ignore = ls-files -o -i --exclude-standard
+
 [branch]
 	autosetupmerge = true
