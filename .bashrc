@@ -5,6 +5,9 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# Source Git Completion
+source bin/git_completion.sh
+
 SOP_HOME=/u01/app/sop
 JAVA_HOME=/usr/lib/jvm/java-1.6.0
 ANT_HOME=/usr/share/ant
@@ -24,7 +27,10 @@ PATH=$PATH:$SOP_HOME/bplaneProvision/bin
 #  will export HOSTNAME has a work-around for ant not picking up this environment variable when executing remotely
 export JAVA_HOME JBOSS_HOME ANT_HOME HORNETQ_HOME SOP_HOME HTTP_PROXY MOD_CLUSTER_HOME HOSTNAME
 
+# set PS1
+PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
+# set configuration
 set o vi
 set editing-mode vi
 set keymap vi
