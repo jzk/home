@@ -38,3 +38,5 @@
 [branch]
 	#tells git-branch and git-checkout to setup new branches with --track
 	autosetupmerge = true
+[rerere]
+	enabled = 1
