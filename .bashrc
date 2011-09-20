@@ -42,3 +42,4 @@ alias mytree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's
 alias synchome="~/hp_utility/invokeSyncAllFrom77.sh"
 alias sophome="cd $SOP_HOME;ll"
 alias automationhome="cd $SOP_AUTOMATION_HOME;ll"
+alias tree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
