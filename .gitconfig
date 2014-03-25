@@ -34,6 +34,10 @@
 
         # Show files ignored by git:
         ignore = ls-files -o -i --exclude-standard
+        
+        fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+        squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+        ri = rebase --interactive --autosquash
 
 [branch]
 	#tells git-branch and git-checkout to setup new branches with --track
