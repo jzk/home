@@ -6,7 +6,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # Source Git Completion
-source bin/git_completion.sh
+source .git_completion.sh
 
 
 # set PS1
