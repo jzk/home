@@ -46,3 +46,10 @@
 	default = simple	
 [rerere]
 	enabled = 1
+  
+[rebase]
+	autosquash = true
+[fetch]
+	prune = true
+[merge]
+	defaultToUpstream = true
