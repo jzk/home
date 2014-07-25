@@ -38,7 +38,8 @@
         fixup = !sh -c 'git commit --fixup=$1' -
         squash = !sh -c 'git commit --squash=$1' -
         ri = rebase --interactive --autosquash
-
+        
+        start = !git checkout master &&  git fetch origin -p && git merge --ff origin/master
 [branch]
 	#tells git-branch and git-checkout to setup new branches with --track
 	autosetupmerge = true
